@@ -1,0 +1,181 @@
+.page-home {
+    .welcome-bg {
+        background-color: #fff;
+        margin: 3.75rem 0 0;
+    }
+
+    .content-area h2 {
+        color: $color__interactive;
+        font-size: 2.125rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .home-medium-title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+
+    .entry-content p {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        @media screen and (min-width: $query__medium) {
+            width: 65%;
+        }
+    }
+
+    .services-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+
+        li {
+            width: 16.875rem;
+            margin: 1rem 1rem;
+
+            a {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 1rem 0;
+                text-decoration: none;
+
+                h3.services-title {
+                    font-size: 1.25rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    color: $color__interactive;
+
+                    &:hover,
+                    &:focus {
+                        border-bottom: 5px solid $color__interactive;
+                    }
+                }
+            }
+
+            a.more-link {
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: $color__interactive;
+                border-radius: 25px;
+                color: #fff;
+                margin: 0 auto 1.5rem;
+                padding: .7rem 1.5rem;
+                font-size: .7em;
+                width: fit-content;
+                transition: all .3s ease-out;
+            }
+        }
+    }
+
+    #news {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cards {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .card {
+            margin-bottom: 1em;
+            border: 1px solid lightgrey;
+
+            figure {
+                max-height: 150px;
+                overflow: hidden;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .card-content {
+                padding: 1.4em;
+
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: .5em;
+                    font-weight: 800;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 95%;
+
+                    &.more-link {
+                        width: fit-content;
+                        color: #fff;
+                        background-color: $color__interactive;
+                        margin-bottom: 01.5rem;
+                        padding: .7rem 1.5rem;
+                        border-radius: 25px;
+                        font-size: .7rem;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: $query__medium ) {
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .card {
+                flex: 0 1 calc(33% - .215rem);
+            }
+        }
+    }
+}
+
+.contact-container {
+    background: url( '/wp-content/themes/odyssee2023/images/hands.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 0 3.75rem;
+    padding: 2rem 0;
+
+    .contact-text {
+        font-size: 2.125rem;
+        letter-spacing: .05rem;
+        line-height: 2.5rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: .6rem;
+    }
+
+    .contact-button {
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+        border: 1px solid #fff;
+        border-radius: 2rem;
+        padding: 0;
+        width: 15rem;
+        margin: auto;
+        background-color: transparent;
+        transition: background-color 250ms ease-in;
+        text-transform: uppercase;
+
+        a{
+            display: block;
+            padding: .8rem;
+            color: #fff;
+            transition: color 250ms ease-in;
+            text-decoration: none;
+        }
+    }
+}
